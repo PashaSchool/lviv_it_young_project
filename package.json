@@ -1,0 +1,36 @@
+{
+  "name": "lmr-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PashaSchool/lviv_it_young_project.git"
+  },
+  "author": "Pasha School",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PashaSchool/lviv_it_young_project/issues"
+  },
+  "homepage": "https://github.com/PashaSchool/lviv_it_young_project#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.18.12",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "postcss": "^6.0.1",
+    "rucksack-css": "^0.9.1"
+  }
+}
