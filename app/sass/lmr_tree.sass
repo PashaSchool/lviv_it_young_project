@@ -1,0 +1,180 @@
+.lmrWrapper
+    width: 80%
+    padding: 2%
+
+ul.lmr-tree
+    position: relative
+    width: 100%
+    &::after
+        content: ''
+        width: 1px
+        height: 100%
+        margin-top: 10rem
+        background-color: $silver
+        position: absolute
+        top: 0
+        left: 0
+/*************BRANCH DRA*****************/
+.draw-dot
+    width: 20px
+    height: 20px
+    border: 5px solid #fff
+    z-index: 20
+    border-radius: 50%
+    background-color: $silver
+    position: absolute
+    display: block
+    left: -10px
+    top: 0
+    // box-sizing: content-box
+    &--mer-mista
+        margin-top: 10rem
+/****************************************/
+
+li.lmr-branch
+    width: 100%
+    margin-bottom: 3rem
+    position: relative
+
+
+
+.departament__name
+    font-size: responsive
+    max-font-size: 1.4rem
+    font-weight: 600
+    position: relative
+    color: $black
+    display: block
+    padding-left: 2rem
+    &::after
+        content: ''
+        width: 100%
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        background-color: rgba($lightblue, .4)
+
+/********** DOT for departament ***********/
+.departament
+    width: 90%
+    margin-left: 10%
+    border: 1px solid $silver
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        width: 10%
+        height: 1px
+        left: -10%
+        top: 9.5px
+        background-color: $silver
+
+    &--mer-mista
+        min-width: 14rem
+        width: 50%
+        margin-left: 30%
+        &::before
+            margin-top: 10rem
+            width: 60%
+            left: -60%
+
+
+ul.stuff-list
+    display: flex
+    flex-wrap: wrap
+    padding: 1%
+    &--mer-mista
+        flex-direction: column
+
+li.stuff-item
+    min-width: 14rem
+    width: 33.3%
+    display: flex
+    flex-direction: column
+    padding: .5rem
+    position: relative
+
+    &--mer-mista
+        width: 100%
+        justify-content: center
+        align-items: center
+
+.stuff_sub-name
+    max-font-size: 12px
+    font-weight: 600
+    text-align: center
+    margin-bottom: .4rem
+    background-color: rgba(80,142,191,.1)
+.stuff-head
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    &__avatar
+        display: block
+        max-width: 50%
+        border-radius: 100%
+        &--mer-mista
+            min-width: 210px
+            min-height: 210px
+    &--mer-mista
+        width: 100%
+        justify-content: center
+        align-items: center
+        padding: 1rem
+
+.stuff-desc
+    width: 100%
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    position: relative
+    &--mer-mista
+        text-align: center
+    &__name
+        color: $black
+        text-align: center
+        font-size: responsive
+        max-font-size: 18px
+        margin: .4rem 0
+        &--mer-mista
+            max-font-size: 26px
+            font-weight: 600
+    &__job
+        color: $light_black
+        font-size: responsive
+        max-font-size: 12px
+        text-align: left
+        margin: .3rem 0
+        &--mer-mista
+            font-size: responsive
+            max-font-size: 14px
+            text-align: center
+
+.stuff-item__chain
+    display: block
+    position: absolute
+    right: 0
+    top: 0
+    &:hover
+        cursor: pointer
+    i
+        color: $silver
+
+.btn
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14)
+    background-color: $lightblue
+    border: none
+    padding: 5px
+    color: $white
+    font-weight: 600
+    letter-spacing: 1px
+.stuff-desc__btn
+    width: 70%
+    margin: auto
+
+/*********************TEST FUN*******************/
+[data-type='togleList'] + div.toggleListWrapper
+    display: none
